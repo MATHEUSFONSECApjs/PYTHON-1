@@ -1,0 +1,11 @@
+# Entrada do valor do salário e da porcentagem de aumento
+salario_atual = float(input("Digite o valor do salário atual: "))
+porcentagem_aumento = float(input("Digite a porcentagem de aumento: "))
+
+# Cálculo do valor do aumento e do novo salário
+valor_aumento = salario_atual * (porcentagem_aumento / 100)
+novo_salario = salario_atual + valor_aumento
+
+# Exibição dos resultados
+print(f"O valor do aumento é: R${valor_aumento:.2f}")
+print(f"O novo salário é: R${novo_salario:.2f}")

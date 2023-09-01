@@ -1,0 +1,16 @@
+# Leitura das duas strings
+string1 = input("Digite a primeira string: ")
+string2 = input("Digite a segunda string: ")
+
+# Conversão das strings em conjuntos (sets) de caracteres únicos
+conjunto1 = set(string1)
+conjunto2 = set(string2)
+
+# Encontrar os caracteres comuns entre os conjuntos
+caracteres_comuns = conjunto1.intersection(conjunto2)
+
+# Converter o conjunto resultante de caracteres comuns de volta para uma string
+string_comum = ''.join(caracteres_comuns)
+
+# Exibir a string com os caracteres comuns
+print("Caracteres comuns: " + string_comum)

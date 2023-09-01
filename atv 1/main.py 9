@@ -1,0 +1,10 @@
+# Entrada dos números
+dividendo = int(input("Digite o dividendo: "))
+divisor = int(input("Digite o divisor: "))
+
+# Cálculo do resto da divisão usando soma e subtração
+while dividendo >= divisor:
+    dividendo -= divisor
+
+# Exibição do resultado
+print("O resto da divisão é:", dividendo)

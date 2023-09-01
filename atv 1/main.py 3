@@ -1,0 +1,9 @@
+# Entrada da distância a percorrer e da velocidade média
+distancia_km = float(input("Digite a distância a percorrer em quilômetros: "))
+velocidade_media = float(input("Digite a velocidade média esperada em km/h: "))
+
+# Cálculo do tempo da viagem
+tempo_horas = distancia_km / velocidade_media
+
+# Exibição do resultado
+print(f"O tempo estimado da viagem é de {tempo_horas:.2f} horas.")

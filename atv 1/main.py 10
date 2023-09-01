@@ -1,0 +1,35 @@
+while True:
+    # Exibição do menu
+    print("\nMenu:")
+    print("1. Adição")
+    print("2. Subtração")
+    print("3. Multiplicação")
+    print("4. Divisão")
+    print("5. Sair")
+    
+    escolha = input("Escolha uma opção (1/2/3/4/5): ")
+
+    if escolha == "5":
+        print("Encerrando o programa...")
+        break
+    elif escolha in ("1", "2", "3", "4"):
+        numero = int(input("Digite o número para a tabuada: "))
+        
+        if escolha == "1":
+            print("Tabuada de Adição:")
+            for i in range(1, 11):
+                print(f"{numero} + {i} = {numero + i}")
+        elif escolha == "2":
+            print("Tabuada de Subtração:")
+            for i in range(1, 11):
+                print(f"{numero} - {i} = {numero - i}")
+        elif escolha == "3":
+            print("Tabuada de Multiplicação:")
+            for i in range(1, 11):
+                print(f"{numero} x {i} = {numero * i}")
+        elif escolha == "4":
+            print("Tabuada de Divisão:")
+            for i in range(1, 11):
+                print(f"{numero} ÷ {i} = {numero / i}")
+    else:
+        print("Opção inválida. Escolha uma opção válida.")

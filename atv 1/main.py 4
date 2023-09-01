@@ -1,0 +1,37 @@
+# Entrada dos números
+num1 = float(input("Digite o primeiro número: "))
+num2 = float(input("Digite o segundo número: "))
+
+# Exibição das opções de operações
+print("Escolha a operação:")
+print("1. Soma (+)")
+print("2. Subtração (-)")
+print("3. Multiplicação (*)")
+print("4. Divisão (/)")
+
+# Entrada da escolha da operação
+operacao = input("Digite o número da operação desejada (1/2/3/4): ")
+
+# Verificação da operação escolhida e cálculo
+if operacao == "1":
+    resultado = num1 + num2
+    operacao_simbolo = "+"
+elif operacao == "2":
+    resultado = num1 - num2
+    operacao_simbolo = "-"
+elif operacao == "3":
+    resultado = num1 * num2
+    operacao_simbolo = "*"
+elif operacao == "4":
+    if num2 != 0:
+        resultado = num1 / num2
+        operacao_simbolo = "/"
+    else:
+        print("Erro: Divisão por zero.")
+        exit()
+else:
+    print("Operação inválida.")
+    exit()
+
+# Exibição do resultado da operação
+print(f"Resultado: {num1} {operacao_simbolo} {num2} = {resultado}")
